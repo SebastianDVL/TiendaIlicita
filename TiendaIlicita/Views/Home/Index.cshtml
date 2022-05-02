@@ -2,30 +2,33 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
+<div class="container-fluid bg-light rounded-3 p-5">
     <h1>¿Que Vendemos?</h1>
     <p class="lead">Silk Road es una tienda virtual pensada para consumidores de alto nivel que no quieran tomar riesgos mercando con el dealer local. Ofrecemos seguridad, velocidad y los mejores precios.</p>
 </div>
 
-<div class="row">
+<div class="row p-5">
     <div class="col-md-4">
+        <img src="https://www.lifeder.com/wp-content/uploads/2016/09/tipos-de-drogas-estimulantes.jpg" alt="Alternate Text" class="w-50" />
         <h2>Estimulantes</h2>
         <p>
             Excitan la actividad psíquica y del sistema nervioso central y adicionalmente incrementan el ritmo  de otros órganos y sistemas orgánicos.
         </p>
-        <p class="btn btn-default">@Html.ActionLink("Empezar a comprar >>", "Index", "productos")</p>
+        @Html.ActionLink("Empezar a comprar >>", "Index", "productos",null,new { @class="btn btn-success"})
     </div>
     <div class="col-md-4">
+        <img src="https://mejorconsalud.as.com/wp-content/uploads/2018/06/setas-alucinogenos-droga.jpg" alt="Alternate Text" class="w-50"  />
         <h2>Alucinogenos</h2>
         <p>Capaz de alterar y distorsionar la percepción sensorial del individuo, interferir su estado de conciencia y sus facultades cognitivas, pueden generar alucinaciones.​</p>
-        <p class="btn btn-default">@Html.ActionLink("Empezar a comprar >>", "Index", "productos")</p>
+        @Html.ActionLink("Empezar a comprar >>", "Index", "productos",null,new {@class="btn btn-success"})
     </div>
     <div class="col-md-4">
+        <img src="https://www.securetec.net/app/uploads/2021/07/R_Neuen_Psychoaktiven-Substanzen_Imago_Images_0080169741h_web-770x514.jpg" alt="Alternate Text" class="w-50"  />
         <h2>NPS</h2>
         <p>
             Nuevas sustancias psicoactivas se definen como “sustancias de abuso, ya sea en forma pura o en preparado, no son controladas por la Convención Única de 1961 sobre Estupefacientes ni por el Convenio sobre Sustancias Sicotrópicas de 1971”.
             .
         </p>
-        <p class="btn btn-default">@Html.ActionLink("Empezar a comprar >>", "Index", "productos")</p>
+        @Html.ActionLink("Empezar a comprar >>", "Index", "productos",null,new {@class="btn btn-success"})
     </div>
 </div>
